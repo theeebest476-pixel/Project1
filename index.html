@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soundspace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Soundspace</div>
+    <nav>
+      <ul>
+        <li onclick="switchInstrument('piano')">Piano</li>
+        <li onclick="switchInstrument('drums')">Drums</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="keyboard">
+      <button data-key="a">A</button>
+      <button data-key="s">S</button>
+      <button data-key="d">D</button>
+      <button data-key="f">F</button>
+    </section>
+
+    <div class="controls">
+      <button onclick="startRecording()">Start Recording</button>
+      <button onclick="stopRecording()">Stop Recording</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
